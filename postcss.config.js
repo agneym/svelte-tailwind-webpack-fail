@@ -1,7 +1,8 @@
 module.exports = ({ env }) => {
   return {
     plugins: {
-      autoprefixer: true,
+      tailwindcss: {},
+      autoprefixer: {},
       cssnano: env === "production",
     },
   };

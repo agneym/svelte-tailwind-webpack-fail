@@ -1,8 +1,8 @@
 const sveltePreprocess = require("svelte-preprocess");
 
 module.exports = {
-  mode: "development",
-  devtool: "source-map",
+  mode: "production",
+  devtool: "eval-cheap-module-source-map",
   module: {
     rules: [
       {
@@ -12,7 +12,10 @@ module.exports = {
           options: {
             emitCss: true,
             hotReload: true,
-            preprocess: sveltePreprocess(),
+            preprocess: sveltePreprocess({
+              sourceMap: true,
+              postcss: true,
+            }),
           },
         },
       },

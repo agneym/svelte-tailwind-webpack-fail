@@ -16,7 +16,9 @@ module.exports = {
           loader: "svelte-loader",
           options: {
             emitCss: true,
-            preprocess: sveltePreprocess(),
+            preprocess: sveltePreprocess({
+              postcss: true,
+            }),
           },
         },
       },
