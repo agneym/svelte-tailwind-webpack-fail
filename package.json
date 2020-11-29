@@ -12,7 +12,8 @@
   "author": "Agney",
   "license": "ISC",
   "dependencies": {
-    "svelte": "^3.30.0"
+    "svelte": "^3.30.0",
+    "tailwindcss": "^2.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.4",
